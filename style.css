@@ -4,8 +4,8 @@
     font-family: Helvetica;
 }
 .board {
-  width: 800px;
-  height: 800px;
+  width: 80vh;
+  height: 80vh;
   display: grid;
   border-radius: 5px;
   overflow: hidden;
@@ -17,7 +17,7 @@
     position: absolute;
     top: 0;
     left: -20px;
-    height: 800px;
+    height: 80vh;
     display: grid;
     grid-template-rows: repeat(8, 1fr);
 }
@@ -34,7 +34,7 @@
     position: absolute;
     bottom: -30px;
     left: 0;
-    width: 800px;
+    width: 80vh;
     display: grid;
     grid-template-columns: repeat(8, 1fr);
 }
@@ -86,4 +86,20 @@ body {
 }
 .other {
   background-color: #BAC949 !important;
+}
+
+@media screen and (max-width: 750px) {
+    .board{
+        width: 80vw;
+        height: 80vw;
+    }
+    .left{
+        height: 80vw;
+    }
+    .bottom{
+        width: 80vw;
+    }
+    p{
+        font-size: 15px !important;
+    }
 }
